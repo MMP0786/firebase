@@ -10,7 +10,11 @@ function ObjectWithUs() {
     const [person, setPerson] = useState(obj)
 
     const handleChange = ()=>{
-       
+        setPerson(pre=>{
+            return {
+                ...pre, name:"King"
+            }
+        })
     }
   return (
     <>
